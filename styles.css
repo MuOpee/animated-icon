@@ -1,0 +1,34 @@
+/* styles.css */
+.image-container {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    animation: spin-border 5s linear infinite;
+}
+
+@keyframes spin-border {
+    0% {
+        border-color: red;
+        transform: rotate(0deg);
+    }
+    100% {
+        border-color: blue;
+        transform: rotate(360deg);
+    }
+}
